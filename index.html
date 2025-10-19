@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Winged Victory of Samothrace</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
       background-color: #f9f9f9;
     }
+
     img {
-      width: 100%; /* change max-width to width */
-      height: auto;
+      max-width: 100%;       /* don’t stretch beyond natural size */
+      height: auto;          /* maintain aspect ratio */
       display: block;
+      image-rendering: auto; /* smooth scaling on high-res screens */
     }
   </style>
 </head>
